@@ -5,36 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
     <style>
-        .container{
-            border: 2px solid darkblue;
-            display: flex;
+        /* .container{ */
+            /* border: 2px solid darkblue; */
+            /* display: flex; */
             /* justify-content: space-around; */
             /* align-items: center; */
-            flex-direction: row-reverse;
-            height: 450px;
-            flex-wrap: wrap;
+            /* flex-direction: row-reverse; */
+            /* height: 450px; */
+            /* flex-wrap: wrap; */
+        /* } */
+        /* .box{ */
+            /* border: 2px dotted darkred; */
+            /* width: 100px; */
+            /* height: 100px; */
+        /* } */
+        nav{
+            display: flex;
+            justify-content: space-between;
+            
         }
-        .box{
-            border: 2px dotted darkred;
-            width: 100px;
-            height: 100px;
+        nav a{
+            text-decoration: none;
+            color: black;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .form input{
+            margin-top: 30px;
+            
         }
     </style>
 </head>
 <body>
-    <h1>Flex Box layout</h1>
-    <div class="container">
-        <div class="box">box-1</div>
-        <div class="box">box-2</div>
-        <div class="box">box-3</div>
-        <div class="box">box-4</div>
-        <div class="box">box-5</div>
-        <div class="box">box-6</div>
-        <div class="box">box-7</div>
-        <div class="box">box-8</div>
-        <div class="box">box-9</div>
-        <div class="box">box-10</div>
-        <div class="box">box-11</div>
-    </div>
+    <!-- <h1>Flex Box layout</h1> -->
+    <!-- <div class="container"> -->
+        <!-- <div class="box">box-1</div> -->
+        <!-- <div class="box">box-2</div> -->
+        <!-- <div class="box">box-3</div> -->
+        <!-- <div class="box">box-4</div> -->
+        <!-- <div class="box">box-5</div> -->
+        <!-- <div class="box">box-6</div> -->
+        <!-- <div class="box">box-7</div> -->
+        <!-- <div class="box">box-8</div> -->
+        <!-- <div class="box">box-9</div> -->
+        <!-- <div class="box">box-10</div> -->
+        <!-- <div class="box">box-11</div> -->
+    <!--</div> -->
+    <nav>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+            <a href="">Profie</a>
+        </div>
+        <div>
+            <a href="">login</a>
+            <a href="">Sign up</a>
+        </div>
+    </nav>
+    <form class="form">
+        <h3>Pleas login</h3>
+        <input type="text" placeholder="Your Name"required>
+        <input type="email" name="" id="" placeholder="yourname@gmail.com" required>
+        <input type="password" name="" id=""placeholder="Your Password" required>
+        <input type="submit" value="Login" required>
+    </form>
 </body>
 </html>
